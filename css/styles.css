@@ -186,7 +186,7 @@ justify-content: center;
 width: 100%;
 height: 100%;
 border-radius: 50%;
-background-color: wheat;
+background: #4D5AE5;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -196,7 +196,10 @@ justify-content: center;
 fill: #FFFFFF;
 }
 
-
+.team-soc-link:is(:hover, :focus)
+{
+  background: #31D0AA;
+}
 
 
 
@@ -281,7 +284,12 @@ letter-spacing: 0.02em;
 .main-first-section {
   margin: 0 auto;
   padding:  188px 0;
-  background-color: #2e2f42;
+ background-image: linear-gradient( rgba(46, 47, 66, 0.7),  rgba(46, 47, 66, 0.7)), url(../images/hero-images.png);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+
+
   }
 .team
 {
@@ -412,6 +420,8 @@ justify-content: space-evenly
 {
   padding-bottom: 40px;
   background: #FFFFFF;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
 }
 
 .header-logo-item
@@ -429,6 +439,45 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 }
+
+.main-customer-section
+{
+  padding: 120px 0;
+}
+.customer-head
+{
+  font-family: 'Roboto';
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2E2F42;
+  margin-bottom: 72px;
+}
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.customers-list-item {
+  width: 168px;
+  height: 88px;
+  
+}
+.customers-btn {
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8E8F99;
+border-radius: 4px;
+}
+.customers-icon {
+  width: 104px;
+  height: 56px;
+  fill: #8E8F99;
+}
+
 /* -------------------------------------------FOOTER------------------------------------- */
 .footer-logo-item
 {
