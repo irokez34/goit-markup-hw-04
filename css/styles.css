@@ -163,6 +163,10 @@ ul{
 {
   width: calc((100% - 48px) / 3);
 }
+.result-list-item:is(:hover, :focus)
+{
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .portfolio-card
 {
   padding-top: 32px;
@@ -180,8 +184,24 @@ justify-content: center;
 .person-soc-item {
   width: 44px;
   height: 44px;
-
 }
+
+.icon
+{
+width: 264px;
+height: 112px;
+background: #F4F4FD;
+border: none;
+border-radius: 4px;
+}
+.strategy-icon
+{
+  
+  width: 66px;
+  height: 66px;
+}
+
+
 .team-soc-link {
 width: 100%;
 height: 100%;
@@ -224,8 +244,9 @@ fill: #FFFFFF;
 {
   color: #FFFFFF;
   background-color:  #404BBF;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  
 }
 
 .nav-item {
@@ -282,6 +303,7 @@ letter-spacing: 0.02em;
 }
 
 .main-first-section {
+  width: 1440px;
   margin: 0 auto;
   padding:  188px 0;
  background-image: linear-gradient( rgba(46, 47, 66, 0.7),  rgba(46, 47, 66, 0.7)), url(../images/hero-images.png);
@@ -466,17 +488,30 @@ text-transform: uppercase;
   height: 88px;
   
 }
+
 .customers-btn {
   width: 168px;
   height: 88px;
   border: 1px solid #8E8F99;
-border-radius: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: transparent;
+}
+.customers-btn:is(:hover,:focus)
+{
+  border: 1px solid #404BBF;
+  border-radius: 4px;
+}
+.customers-btn:is(:hover,:focus) > .customers-icon
+{
+fill: #404BBF
 }
 .customers-icon {
   width: 104px;
   height: 56px;
   fill: #8E8F99;
 }
+
 
 /* -------------------------------------------FOOTER------------------------------------- */
 .footer-logo-item
@@ -501,4 +536,30 @@ border-radius: 4px;
   letter-spacing: 0.02em;
   color: #F4F4FD;
   
+}
+.footer-head
+{ 
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+margin-bottom: 16px;
+}
+.footer-container
+{
+display: flex;
+gap: 120px;
+}
+.footer-soc-item
+{
+  width: 40px;
+  height: 40px;
+}
+.footer-soc-icon
+{
+  width: 24px;
+  height:24px;
+ fill:  #F4F4FD;
 }
