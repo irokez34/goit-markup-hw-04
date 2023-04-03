@@ -165,11 +165,17 @@ ul{
 {
   width: calc((100% - 48px) / 3);
 }
-.result-list-item:is(:hover, :focus)
+
+.result-link :is(:hover, :focus )  
 {
+  background: #FFFFFF;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  
 }
-.portfolio-card
+
+
+.portfolio-card     
 {
   padding-top: 32px;
     padding-bottom: 32px;
@@ -241,8 +247,8 @@ fill: #FFFFFF;
   color: var(--logo-color);
   background-color: var(--background-btn-color);
   border: 1px solid #E7E9FC;
-  border-radius: 4;
   padding: 12px 24px;
+  border-radius: 4px;
   
 }
 
@@ -251,7 +257,7 @@ fill: #FFFFFF;
   color: #FFFFFF;
   background-color:  #404BBF;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+  border-color: transparent;
   
 }
 
@@ -510,16 +516,15 @@ text-transform: uppercase;
   border: 1px solid #404BBF;
   border-radius: 4px;
 }
-.customers-link:is(:hover,:focus) > .customers-icon
+.customers-link:is(:hover,:focus) > .customer-icon
 {
- fill:  #404BBF;
-}
-.customers-icon {
+fill: #404BBF;
+}     
+.customer-icon {
   width: 104px;
   height: 56px;
-  fill: #8E8F99;
+  fill: #8c8ea4;
 }
-
 
 /* -------------------------------------------FOOTER------------------------------------- */
 .footer-logo-item
