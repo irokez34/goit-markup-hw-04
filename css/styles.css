@@ -34,7 +34,7 @@ ul{
 /* -------------------------------------HEADER---------------------------------------- */
 .header {
 
-  padding: 24px 0;
+ 
   background-color: var(--header-background-color);
   border-bottom: 1px solid #E7E9FC;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 
@@ -83,6 +83,7 @@ ul{
 
 .address-list-item {
   padding: 24px 0;
+  display: block;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -166,14 +167,16 @@ ul{
   width: calc((100% - 48px) / 3);
 }
 
-.result-link :is(:hover, :focus )  
+.result-link:is(:hover, :focus )  
 {
   background: #FFFFFF;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-  
 }
-
+.result-link
+{
+  display: block  ;
+}
 
 .portfolio-card     
 {
@@ -191,8 +194,8 @@ justify-content: center;
 }
 
 .person-soc-item {
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
 }
 
 .icon
@@ -262,7 +265,8 @@ fill: #FFFFFF;
 }
 
 .nav-item {
-  padding: 25px 0;
+  padding: 24px 0;
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -293,13 +297,7 @@ color: #434455;
 }
 
 .main-list-item {
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-  color:var(--nav-color);
+width: calc(100%-256px)/4;
    
 }
 
@@ -345,7 +343,7 @@ letter-spacing: 0.02em;
 }
 .list-hero
 {   
-  margin-top: 32px;
+  
   margin-bottom: 8px;
   font-weight: 500;
 font-size: 20px;
@@ -453,7 +451,7 @@ justify-content: space-evenly
 }
 .section-list-item
 {
-  padding-bottom: 40px;
+  padding-bottom: 32px;
   background: #FFFFFF;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 border-radius: 0px 0px 4px 4px;
@@ -515,10 +513,11 @@ text-transform: uppercase;
 {
   border: 1px solid #404BBF;
   border-radius: 4px;
+  fill: #404BBF;
 }
-.customers-link:is(:hover,:focus) > .customer-icon
+.customers-link:is(:hover,:focus)>.customer-icon
 {
-fill: #404BBF;
+fill:#404BBF;
 }     
 .customer-icon {
   width: 104px;
