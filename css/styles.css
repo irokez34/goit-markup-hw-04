@@ -199,7 +199,6 @@ justify-content: center;
 
 .icon
 {
-width: 264px;
 height: 112px;
 background: #F4F4FD;
 border: transparent;
@@ -296,7 +295,7 @@ color: #434455;
 }
 
 .main-list-item {
-width: calc(100%-256px)/4;
+width: calc((100% - 72px) / 4) ;
    
 }
 
@@ -342,7 +341,7 @@ width: calc(100%-256px)/4;
 }
 .list-hero
 {   
-  
+  margin-top: 8px;
   margin-bottom: 8px;
   font-weight: 500;
 font-size: 20px;
@@ -530,12 +529,23 @@ fill:#404BBF;
   COLOR: #f4f4fd
 }
 
+
 .footer
 {
   padding-top: 100px ;
   padding-bottom: 100px;
   background-color: var(--nav-color);
 }
+
+.footer-soc-list
+{
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+
+
 
 .footer-list-object
 {     
